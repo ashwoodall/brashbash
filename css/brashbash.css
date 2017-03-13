@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Rochester');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #6d6363;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #555f61;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Rochester', sans-serif;
+  text-align: center;
+  color: #708b75;
+  padding: 0;
+  margin: 0;
+}
+
+h4{
+  color: #9ab87a;
+  text-align: left;
+}
+
+h5 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a {
+  color: #AE4B5F;
+  text-decoration: none;
+}
+
+div img {
+  vertical-align: middle;
+  padding: 0px 30px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- Navigation ---- */
+
+header {
+  height: 64px;
+  z-index: 1000;
+  width: 100%;
+  
+}
+
+header h1 {
+  color: #AE4B5F;
+  padding: 0 15px;
+}
+
+footer {
+  font-family: 'Open Sans', sans-serif;  
+  background-color: #373D3F;
+  color: #DEB7BF;
+  text-align: right;
+  padding: 5px 10px;
+}
+
+.show-header{
+  top: 0;
+  display: block;
+  position: fixed;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-header{
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+  flex-direction:row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  height: 100%;
+}
+.name {
+  font-size: 1.35em;
+  margin: 0;
+}
+.main-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.name a,
+.main-nav a {
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+.main-nav a {
+  font-size: .95em;
+  color: #708b75;
+  text-transform: uppercase;
+
+}
+.main-nav a:hover {
+  color: #9ab87a;
+}
+
+.rsvp-header{
+  padding-top: 100px;
+}
+
+.card {
+  font-size: 2rem;
+  color: #777;
+  background-color: #FFFFFF;
+  text-align:center;
+  padding: 5%;
+  text-align: justify;
+  position:relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  margin: auto;
+  width: 70%;
+  height: auto;
+  font-family: 'Open Sans', sans-serif;
+  color: #F0E7D8;
+  padding: 18px;
+  font-size: 2.6em;
+  letter-spacing: 10px;
+  line-height: 1em;
+}
+
+.registry {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.rsvp {
+  font-family: 'Open Sans', sans-serif;
+  color: #AE4B5F;
+}
+
+.wedparty {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.member {
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, 
+.bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9 {
+  position: relative;
+  background-attachment: fixed;
+  background-origin: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("../images/niagara.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("../images/enchanted.jpg");
+  min-height: 75%;
+}
+
+.bgimg-3 {
+  background-image: url("../images/melandsam.jpg");
+  min-height: 75%;
+}
+
+.bgimg-4 {
+  background-image: url("../images/Disneyhalf.jpg");
+  min-height: 75%;
+}
+
+.bgimg-5 {
+  background-image: url("../images/pecanst.jpg");
+  min-height: 75%;
+}
+
+.bgimg-6 {
+  background-image: url("../images/texasrace.jpg");
+  min-height: 75%;
+}
+
+.bgimg-7 {
+  background-image: url("../images/paris.jpg");
+  min-height: 75%;
+}
+
+.bgimg-8 {
+  background-image: url("../images/union.jpg");
+  min-height: 75%;
+}
+
+.bgimg-9 {
+  background-image: url("../images/succulents.jpg");
+  min-height: 100%;
+  background-size: 130%;
+ }
+  
+.end {
+  font-family: 'Rochester', sans-serif;
+  margin: 0 auto;
+  font-size: 5em;
+  color: #DEB7BF;
+}
+
+#rsvp p {
+  text-align: center;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media only screen and (max-device-width: 769px) {
+  h4 {
+    font-size: 1.5em;
+  }
+
+  .bgimg-1 {
+    background-image: url("../images/niagaramobile.jpg");
+  }
+
+  .main-header,
+  .main-nav
+  {
+    display: none;
+  }
+
+  .member {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bgimg-1, .bgimg-9{
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;       
+    background-size: cover; 
+  }
+
+  .bgimg-9 {
+    background-size: 350%;
+  }
+
+  .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, 
+  .bgimg-6, .bgimg-7, .bgimg-8 {
+    display: none;
+  }
+
+  .card{
+    padding: 10% 5%;
+  }
+
+  .wedparty {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+@media (min-width: 1025px) {
+
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between; 
+  }
+}
+
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    /*.bgimg-1, .bgimg-9 {
+        background-attachment: scroll;
+    }*/
+}
+
+  
