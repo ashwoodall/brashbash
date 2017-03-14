@@ -68,6 +68,7 @@ footer {
   padding: 5px 10px;
 }
 
+
 .show-header{
   top: 0;
   display: block;
@@ -310,9 +311,9 @@ footer {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    /*.bgimg-1, .bgimg-9 {
+    .bgimg-1, .bgimg-9 {
         background-attachment: scroll;
-    }*/
+    }
 }
 
   
