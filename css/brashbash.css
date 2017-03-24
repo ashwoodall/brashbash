@@ -274,7 +274,7 @@ footer {
   Media Queries
 ==================================== */
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-device-width: 769px) {
 
   .bgimg-1 {
     background-image: url("../images/ashleybrandon191146mobile.jpg");
