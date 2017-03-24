@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Rochester');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Rochester');
 
 body, html {
   height: 100%;
@@ -46,13 +46,19 @@ ul {
   padding: 0;
 }
 
+hr {
+  border-color: rgba(0,0,0,0.12);
+  margin-bottom: 24px;
+  width: 64px;
+}
+
 /* ---- Navigation ---- */
 
 header {
-  height: 64px;
+  background-color: #FFFFFF;
+  height: 52px;
   z-index: 1000;
   width: 100%;
-  
 }
 
 header h1 {
@@ -61,7 +67,7 @@ header h1 {
 }
 
 footer {
-  font-family: 'Open Sans', sans-serif;  
+  font-family: 'Open Sans', sans-serif;
   background-color: #373D3F;
   color: #DEB7BF;
   text-align: right;
@@ -73,18 +79,18 @@ footer {
   top: 0;
   display: block;
   position: fixed;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(50, 50, 50, 0.08);
 }
 
-.main-header{
+.main-header {
   display: flex;
   flex: 1 1 auto;
-  width: 100%;
+  max-width: 960px;
   flex-direction:row;
   align-items: center;
   justify-content: space-between;
-  background-color: #FFFFFF;
   height: 100%;
+  margin: 0 auto;
 }
 .name {
   font-size: 1.35em;
@@ -145,6 +151,7 @@ footer {
   color: #F0E7D8;
   padding: 18px;
   font-size: 2.6em;
+  font-weight: 300;
   letter-spacing: 10px;
   line-height: 1em;
 }
@@ -158,9 +165,20 @@ footer {
   margin: 10px;
 }
 
+.registry a {
+  margin: 16px ;
+}
+
 .rsvp {
   font-family: 'Open Sans', sans-serif;
   color: #AE4B5F;
+  border: 2px solid #AE4B5F;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 32px;
+  text-transform: uppercase;
+  width: 220px;
 }
 
 .wedparty {
@@ -178,61 +196,52 @@ footer {
   margin: 10px;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, 
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5,
 .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9 {
   position: relative;
   background-attachment: fixed;
   background-origin: inherit;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100%;
 }
 
 .bgimg-1 {
-  background-image: url("../images/niagara.jpg");
-  min-height: 100%;
+  background-image: url("../images/ashleybrandon191146.jpg");
 }
 
 .bgimg-2 {
-  background-image: url("../images/enchanted.jpg");
-  min-height: 75%;
+  background-image: url("../images/ashleybrandon170256.jpg");
 }
 
 .bgimg-3 {
-  background-image: url("../images/melandsam.jpg");
-  min-height: 75%;
+  background-image: url("../images/ashleybrandon173825_2.jpg");
 }
 
 .bgimg-4 {
-  background-image: url("../images/Disneyhalf.jpg");
-  min-height: 75%;
+  background-image: url("../images/ashleybrandon180657.jpg");
 }
 
 .bgimg-5 {
-  background-image: url("../images/pecanst.jpg");
-  min-height: 75%;
+  background-image: url("../images/ashleybrandon191218.jpg");
 }
 
 .bgimg-6 {
-  background-image: url("../images/texasrace.jpg");
-  min-height: 75%;
+  background-image: url("../images/ashleybrandon171300.jpg");
 }
 
 .bgimg-7 {
-  background-image: url("../images/paris.jpg");
-  min-height: 75%;
+  background-image: url("../images/ashleybrandon172725.jpg");
 }
 
 .bgimg-8 {
-  background-image: url("../images/union.jpg");
-  min-height: 75%;
+  background-image: url("../images/ashleybrandon175428.jpg");
 }
 
 .bgimg-9 {
-  background-image: url("../images/succulents.jpg");
-  min-height: 100%;
-  background-size: 130%;
+  background-image: url("../images/ashleybrandon171412.jpg");
  }
-  
+
 .end {
   font-family: 'Rochester', sans-serif;
   margin: 0 auto;
@@ -240,24 +249,37 @@ footer {
   color: #DEB7BF;
 }
 
+#rsvp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #rsvp p {
+  max-width: 600px;
   text-align: center;
 }
 
-/* ================================= 
+#weekend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#weekend h4 {
+  margin: 16px 0;
+}
+
+/* =================================
   Media Queries
 ==================================== */
 
-@media only screen and (max-device-width: 769px) {
-  h4 {
-    font-size: 1.5em;
-  }
+@media only screen and (max-width: 769px) {
 
   .bgimg-1 {
-    background-image: url("../images/niagaramobile.jpg");
+    background-image: url("../images/ashleybrandon191146mobile.jpg");
   }
 
-  .main-header,
   .main-nav
   {
     display: none;
@@ -271,17 +293,17 @@ footer {
   }
 
   .bgimg-1, .bgimg-9{
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;       
-    background-size: cover; 
+    background-attachment: fixed;
+    background-size: cover;
   }
 
   .bgimg-9 {
     background-size: 350%;
   }
 
-  .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, 
+  .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5,
   .bgimg-6, .bgimg-7, .bgimg-8 {
     display: none;
   }
@@ -303,7 +325,7 @@ footer {
 
   .main-header {
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
 }
 
@@ -316,4 +338,3 @@ footer {
     }
 }
 
-  

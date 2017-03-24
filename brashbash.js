@@ -74,7 +74,7 @@ $(document).ready(function(){
 	    	[].slice.call(parallax).forEach(function(element,i){
 	      	var windowYOffset = window.pageYOffset;
 	      	elementYOffset = element.offsetTop; 
-	      	elementBackgrounPos = "50% " + (-(windowYOffset) * speed) + "px";
+	      	elementBackgrounPos = "50% " + (-(windowYOffset - elementYOffset) * speed) + "px";
 	      	element.style.backgroundPosition = elementBackgrounPos;
 	    	});
 	  	};
